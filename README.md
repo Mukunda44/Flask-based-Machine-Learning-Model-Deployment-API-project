@@ -7,14 +7,13 @@ This project demonstrates how to deploy a **Machine Learning model** as a **REST
 flask-ml-api/
 ├── app/
 │   ├── __init__.py          # Flask app factory (CORS, routes, model load)
-│   ├── __main__.py          # Entry point (python -m app)
+│   ├── main.py              # Entry point (python -m app)
 │   ├── auth.py              # API key authentication decorator
 │   ├── config.py            # Loads settings.yaml config
 │   ├── errors.py            # Global error handlers + structured logging
 │   ├── model.py             # IrisModel: load + predict methods
 │   ├── routes.py            # /health, /predict, /batch_predict endpoints
-│   ├── schemas.py           # Pydantic validation models
-│   └── ...
+│   └── schemas.py           # Pydantic validation models
 ├── config/
 │   └── settings.yaml        # Configuration (api_key, model path, CORS, etc.)
 ├── models/
@@ -25,8 +24,7 @@ flask-ml-api/
 │   ├── conftest.py
 │   ├── test_health.py
 │   ├── test_predict.py
-│   ├── test_batch.py
-│   └── ...
+│   └── test_batch.py
 ├── requirements.txt
 ├── Dockerfile
 └── README.md
