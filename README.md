@@ -4,6 +4,7 @@
 This project demonstrates how to deploy a **Machine Learning model** as a **REST API** using Flask. It loads a pre-trained **Logistic Regression model** trained on the **Iris dataset**, validates incoming requests, and returns predictions through clean JSON responses. The project is designed to meet real-world API development standards, including: config-driven model loading, input validation and structured error handling, authentication and CORS, logging and testing with Flask test client, and containerization with Docker.
 
 ## 📁 Project Structure
+```
 flask-ml-api/
 │
 ├── app/                            # Core Flask application package
@@ -35,6 +36,7 @@ flask-ml-api/
 ├── requirements.txt                # Python dependencies
 └── README.md                       # Project documentation
 
+```
 
 ## 🚀 Features Implemented
 
