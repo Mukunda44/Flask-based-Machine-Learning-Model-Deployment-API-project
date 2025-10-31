@@ -5,29 +5,36 @@ This project demonstrates how to deploy a **Machine Learning model** as a **REST
 
 ## 📁 Project Structure
 flask-ml-api/
-├── app/
-│   ├── __init__.py          # Flask app factory (CORS, routes, model load)
-│   ├── main.py              # Entry point (python -m app)
-│   ├── auth.py              # API key authentication decorator
-│   ├── config.py            # Loads settings.yaml config
-│   ├── errors.py            # Global error handlers + structured logging
-│   ├── model.py             # IrisModel: load + predict methods
-│   ├── routes.py            # /health, /predict, /batch_predict endpoints
-│   └── schemas.py           # Pydantic validation models
+│
+├── app/                            # Core Flask application package
+│   ├── __init__.py                 # Flask app factory (CORS, routes, model load)
+│   ├── __main__.py                 # Entry point (python -m app)
+│   ├── auth.py                     # API key authentication decorator
+│   ├── config.py                   # Loads settings.yaml configuration
+│   ├── errors.py                   # Global error handlers + structured logging
+│   ├── model.py                    # IrisModel: load + predict methods
+│   ├── routes.py                   # /health, /predict, /batch_predict endpoints
+│   └── schemas.py                  # Pydantic validation models
+│
 ├── config/
-│   └── settings.yaml        # Configuration (api_key, model path, CORS, etc.)
+│   └── settings.yaml               # Configuration (API key, model path, CORS, etc.)
+│
 ├── models/
-│   └── iris_logreg.joblib   # Trained scikit-learn Logistic Regression model
+│   └── iris_logreg.joblib          # Trained scikit-learn Logistic Regression model
+│
 ├── notebooks/
-│   └── train_model.ipynb    # Jupyter notebook to train and save the model
+│   └── train_model.ipynb           # Jupyter notebook to train and save the model
+│
 ├── tests/
-│   ├── conftest.py
-│   ├── test_health.py
-│   ├── test_predict.py
-│   └── test_batch.py
-├── requirements.txt
-├── Dockerfile
-└── README.md
+│   ├── conftest.py                 # Pytest configuration and fixtures
+│   ├── test_health.py              # Unit test for /health endpoint
+│   ├── test_predict.py             # Unit test for /predict endpoint
+│   └── test_batch.py               # Unit test for /batch_predict endpoint
+│
+├── Dockerfile                      # Containerization setup
+├── requirements.txt                # Python dependencies
+└── README.md                       # Project documentation
+
 
 ## 🚀 Features Implemented
 
