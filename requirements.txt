@@ -1,0 +1,8 @@
+# Required dependencies for Flask-based ML API project (Iris Dataset)
+flask
+Flask-Cors
+pydantic #For validating the input data
+scikit-learn #For training and loading the model
+joblib #For saving and loading the trained model
+pyyaml #For reading configuration data
+pytest #To verify the API works correctly or not

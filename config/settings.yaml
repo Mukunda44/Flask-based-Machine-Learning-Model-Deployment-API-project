@@ -1,0 +1,11 @@
+# App-level configuration
+model_path: "models/iris_logreg.joblib"
+model_name: "logreg-iris"
+model_version: "1.0"
+
+api_key: "CHANGE_ME"
+
+cors_origins: ["*"]
+
+feature_count: 4
+class_labels: ["stosa","vesicolor","virginica"]
